@@ -1,0 +1,4 @@
+Name: Samriddhi
+Roll: 28
+Address: Naikap
+Marks: 85.00

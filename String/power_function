@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+// Function to calculate power (x^p)
+double power(double x, int p) {
+    double result = 1.0;
+    int abs_p = (p < 0) ? -p : p; // Absolute value of exponent
+    
+    for (int i = 0; i < abs_p; i++) {
+        result *= x;
+    }
+    
+    // If exponent is negative, return reciprocal
+    return (p < 0) ? 1.0 / result : result;
+}
+
+int main() {
+    double base;
+    int exponent;Write and test the following power() function that returns x raised to the power n, where
+n can be any integer:
+double power (double x, int p)
+    
+    // Input base and exponent
+    printf("Enter base: ");
+    scanf("%lf", &base);
+    printf("Enter exponent: ");
+    scanf("%d", &exponent);
+    
+    // Compute and display result
+    printf("%.2lf^%d = %.6lf\n", base, exponent, power(base, exponent));
+    
+    return 0;
+}
